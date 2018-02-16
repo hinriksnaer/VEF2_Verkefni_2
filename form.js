@@ -98,8 +98,7 @@ router.post(
         });
       } else {
         const loggingInfo = {
-          isLogged: true,
-          userName: req.user.name,
+          isLogged: false,
         };
         res.render('form', {
           data,
