@@ -1,0 +1,25 @@
+extends layout
+block content
+    form(id ="taflan" method = 'post' action = '/')
+        table-wrapper
+            table
+                thead
+                    tr
+                        th id
+                        th dagsetning
+                        th name
+                        th email
+                        th ssn
+                        th amount
+                tbody
+                    for i in data
+                        tr
+                            td=i.id
+                            td=i.date
+                            td=i.username
+                            td=i.email
+                            td=i.ssn
+                            td=i.amount
+    a(href='/download' class="download") <p>Sækja</p>
+    footer(class="footer")
+        a(href ='/') Forsíða

@@ -18,4 +18,92 @@ body {
   font-size: 16px;
   background-color: #eee;
   color: #333;
+  padding-top: 15%;
+}
+
+a {
+  color: black;
+}
+
+.error__container {
+  margin-top: -5em !important;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 5em;
+}
+
+ul {
+  margin-bottom: 1em;
+}
+
+.form__container > * {
+  margin: auto;
+  font-size: 2em;
+}
+
+.login__item {
+  margin-bottom: 1em;
+}
+
+.footer {
+  display: flex;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px solid black;
+  flex-direction: column;
+  padding-left: 5%;
+}
+
+.footer > * {
+  margin-bottom: 1em;
+}
+
+.form__container input {
+  float: right;
+  margin-left: 1em;
+  height: 3em;
+  width: 20em;
+}
+
+.form__container .login__submit {
+  float: left;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.thankContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+}
+
+.thankContainer > * {
+  margin: auto;
+}
+
+.download {
+  text-align: center;
 }

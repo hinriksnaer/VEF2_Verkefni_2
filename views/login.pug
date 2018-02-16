@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    div(class="form__container")
+        form(method='post' action='/login')
+            div(class="login__item")
+                label(for='username') Notandanafn
+                input(type='text',name='username')
+            div(class="login__item")
+                label(for='password') Lykilorð
+                input(type='password',name='password')
+
+            div(class="login__item")
+                input(type='submit')
+    footer(class='footer')
+        a(href='/') Forsíða

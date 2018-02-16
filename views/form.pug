@@ -1,4 +1,32 @@
 extends layout
 
 block content
-  p Form!
+  div(class="form__container")
+    div(class="error__container")
+      if data.err
+        ul
+          each val, index in data.err
+            li=val
+    form(method='post' action='/adduser')
+      div(class="login__item")
+        label(for='name') Nafn:
+        input(type='text',name='name', value= data.name)
+      div(class="login__item")
+        label(for='email') Netfang:
+        input(type='email',name='email', value= data.email)
+      div(class="login__item")
+        label(for='ssn') Kennitala:
+        input(type='ssn' name='ssn', value= data.ssn)
+      div(class="login__item")
+        label(for="amount") Fjöldi:
+        input(type="number", name="amount", value= data.amount)
+      div(class="login__submit")
+        input(type='submit')
+  footer(class="footer")   
+    if (loggingInfo.isLogged === true)
+      p Innskráður notandi: #{loggingInfo.userName}
+      a(href = '/logout') Útskráning
+      a(href = '/admin') Stjórnarsíða
+    else
+      a(href = '/login') Innskráning
+      
