@@ -1,6 +1,6 @@
 CREATE TABLE public.users
 (
-  id integer NOT NULL, 
+  id SERIAL NOT NULL, 
   date timestamp with time zone NOT NULL,
   username text NOT NULL,
   email text NOT NULL,
