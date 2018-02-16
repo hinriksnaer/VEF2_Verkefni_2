@@ -77,5 +77,5 @@ app.use(errorHandler);
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.info(`Server running at http://${hostname}:${port}/`);
+  console.info(`Server running at ${port}`);
 });
