@@ -1,4 +1,4 @@
-const { Client } = require('pg')
+const { Client } = require('pg');
 const fs = require('fs');
 const util = require('util');
 
